@@ -12,14 +12,4 @@ ng-model yönergesi; adı üzerinde herhangi bir etkileşimli html etiketinde
 `<input>` 
 ilgili içeriği elde etmek için model tanımlamamızı sağlayan direktiftir.
 
-
-<label>Server Name</label>
-<input
-type="text"
-class="form-control"
-[(ngModel)]="serverName">
-<!--<p>{{ serverName }}</p>-->
-<button
-class="btn btn-primary"
-[disabled]="!allowNewServer"
-(click)="onCreateServer()">Add Server</button>
+s
