@@ -12,4 +12,4 @@ ng-model yönergesi; adı üzerinde herhangi bir etkileşimli html etiketinde
 `<input>` 
 ilgili içeriği elde etmek için model tanımlamamızı sağlayan direktiftir.
 
-s
+
