@@ -6,21 +6,23 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   templateUrl: './reactive-form.component.html',
   styleUrls: ['./reactive-form.component.css']
 })
-export class ReactiveFormComponent implements OnInit{
+export class ReactiveFormComponent implements OnInit {
   genders = ['male', 'female'];
   signupForm: FormGroup
+
+
 
   ngOnInit(): void {
     this.signupForm = new FormGroup({
       'userData': new FormGroup({
-        'username' : new FormControl(null, Validators.required),
-        'email' : new FormControl(null, [Validators.required, Validators.email])
+        'username': new FormControl(null, [Validators.required]),
+        'email': new FormControl(null, [Validators.required, Validators.email])
       }),
-      'gender' : new FormControl('female')
+      'gender': new FormControl('female')
     });
   }
 
-  onSubmit(){
+  onSubmit() {
     console.log(this.signupForm)
   }
 
