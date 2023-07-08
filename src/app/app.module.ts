@@ -11,6 +11,7 @@ import { ListComponent } from './io/list/list.component';
 import { TodoComponent } from './io/todo/todo.component';
 import { ParentComponent } from './io/parent/parent.component';
 import { ChildComponent } from './io/child/child.component';
+import { PropBindComponent } from './prop-bind/prop-bind.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ChildComponent } from './io/child/child.component';
     ListComponent,
     TodoComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    PropBindComponent
   ],
   imports: [
     BrowserModule,
