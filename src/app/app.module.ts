@@ -7,13 +7,21 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { TdFormComponent } from './td-form/td-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ListComponent } from './io/list/list.component';
+import { TodoComponent } from './io/todo/todo.component';
+import { ParentComponent } from './io/parent/parent.component';
+import { ChildComponent } from './io/child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     TdFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    ListComponent,
+    TodoComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
