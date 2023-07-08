@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class PropBindComponent {
   title = 'RastMobile';
+  product = {
+    name : 'airpod',
+    price: 1000
+  };
 }
