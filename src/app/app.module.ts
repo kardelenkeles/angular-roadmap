@@ -12,6 +12,8 @@ import { TodoComponent } from './io/todo/todo.component';
 import { ParentComponent } from './io/parent/parent.component';
 import { ChildComponent } from './io/child/child.component';
 import { PropBindComponent } from './prop-bind/prop-bind.component';
+import { DirectivesComponent } from './directives/directives.component';
+import {RouterOutlet} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -23,13 +25,15 @@ import { PropBindComponent } from './prop-bind/prop-bind.component';
     TodoComponent,
     ParentComponent,
     ChildComponent,
-    PropBindComponent
+    PropBindComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterOutlet
   ],
   providers: [],
   bootstrap: [AppComponent]
