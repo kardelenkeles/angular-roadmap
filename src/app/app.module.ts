@@ -14,6 +14,11 @@ import { ChildComponent } from './io/child/child.component';
 import { PropBindComponent } from './prop-bind/prop-bind.component';
 import { DirectivesComponent } from './directives/directives.component';
 import {RouterOutlet} from "@angular/router";
+import {NgxsModule} from "@ngxs/store";
+import { GeneralComponent } from './general/general.component';
+import {DesignutilityService} from "./designutility.service";
+import {AppState} from "./states/app.state";
+import {AppRoutingModule} from "./app-routing/app-routing.module";
 
 @NgModule({
   declarations: [
@@ -26,16 +31,19 @@ import {RouterOutlet} from "@angular/router";
     ParentComponent,
     ChildComponent,
     PropBindComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    GeneralComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterOutlet
+    RouterOutlet,
+    NgxsModule.forRoot([AppState])
   ],
-  providers: [],
+  providers: [DesignutilityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
