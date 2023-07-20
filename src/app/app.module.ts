@@ -15,10 +15,8 @@ import { PropBindComponent } from './prop-bind/prop-bind.component';
 import { DirectivesComponent } from './directives/directives.component';
 import {RouterOutlet} from "@angular/router";
 import {NgxsModule} from "@ngxs/store";
-import { GeneralComponent } from './general/general.component';
-import {DesignutilityService} from "./designutility.service";
-import {AppState} from "./states/app.state";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +30,7 @@ import {AppRoutingModule} from "./app-routing/app-routing.module";
     ChildComponent,
     PropBindComponent,
     DirectivesComponent,
-    GeneralComponent
+    ContentComponent
   ],
   imports: [
     BrowserModule,
@@ -41,9 +39,9 @@ import {AppRoutingModule} from "./app-routing/app-routing.module";
     HttpClientModule,
     ReactiveFormsModule,
     RouterOutlet,
-    NgxsModule.forRoot([AppState])
+    NgxsModule.forRoot([])
   ],
-  providers: [DesignutilityService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
