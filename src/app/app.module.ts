@@ -17,6 +17,7 @@ import {RouterOutlet} from "@angular/router";
 import {NgxsModule} from "@ngxs/store";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
 import { ContentComponent } from './content/content.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContentComponent } from './content/content.component';
     ChildComponent,
     PropBindComponent,
     DirectivesComponent,
-    ContentComponent
+    ContentComponent,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
