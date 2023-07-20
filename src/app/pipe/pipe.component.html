@@ -16,20 +16,6 @@
 </div>
 
 
-<div class="card card-block">
-  <h4 class="card-title">Date</h4>
-  <div class="card-text">
-    <p ngNonBindable>{{ dateVal | date: 'shortTime' }}</p> (1)
-    <p>{{ dateVal | date: 'shortTime' }}</p>
-
-    <p ngNonBindable>{{ dateVal | date:'fullDate' }}</p>
-    <p>{{ dateVal | date: 'fullDate' }}</p>
-
-    <p ngNonBindable>{{ dateVal | date: 'd/M/y' }}</p>
-    <p>{{ dateVal | date: 'd/M/y' }}</p>
-  </div>
-</div>
-
 
 <div class="card card-block">
   <div class="card-text">
@@ -42,16 +28,6 @@
   </div>
 </div>
 
-<div class="card card-block">
-  <h4 class="card-title">JsonPipe</h4>
-  <div class="card-text">
-    <p ngNonBindable>{{ jsonVal }}</p> (1)
-    <p>{{ jsonVal }}</p>
-
-    <p ngNonBindable>{{ jsonVal | json }}</p>
-    <p>{{ jsonVal | json }}</p>
-  </div>
-</div>
 
 <div class="card card-block">
   <h4 class="card-title">LowerCasePipe</h4>
