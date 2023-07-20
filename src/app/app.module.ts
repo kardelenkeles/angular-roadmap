@@ -20,6 +20,7 @@ import { ContentComponent } from './content/content.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { ShortenpipeComponent } from './shortenpipe/shortenpipe.component';
 import {ShortenPipe} from "./shortenpipe/shorten.pipe";
+import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {ShortenPipe} from "./shortenpipe/shorten.pipe";
     ContentComponent,
     PipeComponent,
     ShortenpipeComponent,
-    ShortenPipe
+    ShortenPipe,
+    AttributeDirectivesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<h4>NgStyle</h4>
+<ul *ngFor="let person of people">
+  <li [ngStyle]="{'color':getColor(person.city)}"> {{ person.name }} ({{ person.city }})
+  </li>
+</ul>
+
+<h4>NgClass</h4>
+<ul *ngFor="let person of people">
+  <li [ngClass]="{
+    'manisa':person.city === 'Manisa',
+    'izmir':person.city === 'İzmir',
+    'istanbul':person.city === 'İstanbul'
+  }">{{ person.name }} ({{ person.city }})
+  </li>
+</ul>
