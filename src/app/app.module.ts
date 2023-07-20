@@ -18,6 +18,8 @@ import {NgxsModule} from "@ngxs/store";
 import {AppRoutingModule} from "./app-routing/app-routing.module";
 import { ContentComponent } from './content/content.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { ShortenpipeComponent } from './shortenpipe/shortenpipe.component';
+import {ShortenPipe} from "./shortenpipe/shorten.pipe";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { PipeComponent } from './pipe/pipe.component';
     PropBindComponent,
     DirectivesComponent,
     ContentComponent,
-    PipeComponent
+    PipeComponent,
+    ShortenpipeComponent,
+    ShortenPipe
   ],
   imports: [
     BrowserModule,
